@@ -26,10 +26,10 @@ The application uses Java Servlet to process the form submission and JavaServer 
 - Navigation back to the profile form.
 
 ### Project Structure
-- `web/index.html` — Personal profile input form.
-- `web/profile.jsp` — Displays the submitted profile information.
-- `src/java/com/csc584/profile/ProfileServlet.java` — Processes form data and forwards it to the JSP page.
-- `screenshots/` — Screenshots of the application.
+- `web/index.html`: Personal profile input form.
+- `web/profile.jsp`: Displays the submitted profile information.
+- `src/java/com/csc584/profile/ProfileServlet.java`: Processes form data and forwards it to the JSP page.
+- `screenshots/`: Screenshots of the application.
 
 ### How to Run the Application
 1. Install JDK 8 and NetBeans IDE 8.2.
@@ -45,9 +45,9 @@ The application uses Java Servlet to process the form submission and JavaServer 
 
 ### Screenshots
 The `screenshots` folder contains:
-- `01-profile-form.png` — Empty personal profile form.
-- `02-filled-form.png` — Completed form before submission.
-- `03-profile-output.png` — Profile page displaying submitted information.
+- `01-profile-form.png`: Empty personal profile form.
+- `02-filled-form.png`: Completed form before submission.
+- `03-profile-output.png`: Profile page displaying submitted information.
 
 ### Notes
 - The application does not require database integration.
