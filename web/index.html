@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile | CSC584</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 16px;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        h1 {
+            margin-bottom: 8px;
+            color: #1d4ed8;
+        }
+
+        .subtitle {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin: 18px 0 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 28px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Create Your Profile</h1>
+        <p class="subtitle">
+            Complete the form below to generate your personal profile.
+        </p>
+
+        <form action="ProfileServlet" method="post">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" name="studentId"
+                   placeholder="Enter your student ID" required>
+
+            <label for="programme">Programme</label>
+            <input type="text" id="programme" name="programme"
+                   placeholder="Enter your programme" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="hobbies">Hobbies</label>
+            <input type="text" id="hobbies" name="hobbies"
+                   placeholder="e.g. Reading, Gaming, Coding" required>
+
+            <label for="introduction">Short Self-Introduction</label>
+            <textarea id="introduction" name="introduction"
+                      rows="4"
+                      placeholder="Tell us a little about yourself..."
+                      required></textarea>
+
+            <button type="submit">Generate My Profile</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
